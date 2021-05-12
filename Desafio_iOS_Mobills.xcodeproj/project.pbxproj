@@ -18,6 +18,11 @@
 		E7F23D542649EF9500A942CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F23D532649EF9500A942CD /* LoginViewController.swift */; };
 		E7F23D572649EFA200A942CD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F23D562649EFA200A942CD /* RegisterViewController.swift */; };
 		E7F23D5B2649F92200A942CD /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F23D5A2649F92200A942CD /* ExpensesViewController.swift */; };
+		E7FFCF5A264AD5610016FD3F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFCF59264AD5610016FD3F /* Expense.swift */; };
+		E7FFCF5F264ADB2A0016FD3F /* ExpensesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFCF5D264ADB2A0016FD3F /* ExpensesTableViewCell.swift */; };
+		E7FFCF60264ADB2A0016FD3F /* ExpensesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FFCF5E264ADB2A0016FD3F /* ExpensesTableViewCell.xib */; };
+		E7FFCF6A264B21D10016FD3F /* AlertStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FFCF69264B21D10016FD3F /* AlertStoryboard.storyboard */; };
+		E7FFCF6D264B22200016FD3F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFCF6C264B22200016FD3F /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		E7F23D532649EF9500A942CD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E7F23D562649EFA200A942CD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E7F23D5A2649F92200A942CD /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		E7FFCF59264AD5610016FD3F /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		E7FFCF5D264ADB2A0016FD3F /* ExpensesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTableViewCell.swift; sourceTree = "<group>"; };
+		E7FFCF5E264ADB2A0016FD3F /* ExpensesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpensesTableViewCell.xib; sourceTree = "<group>"; };
+		E7FFCF69264B21D10016FD3F /* AlertStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertStoryboard.storyboard; sourceTree = "<group>"; };
+		E7FFCF6C264B22200016FD3F /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,16 +101,37 @@
 				E7A7D7352649C8A50069305C /* AppDelegate.swift */,
 				E7A7D7372649C8A50069305C /* SceneDelegate.swift */,
 				E7A7D73B2649C8A50069305C /* Main.storyboard */,
+				E7FFCF5E264ADB2A0016FD3F /* ExpensesTableViewCell.xib */,
+				E7FFCF5D264ADB2A0016FD3F /* ExpensesTableViewCell.swift */,
+				E7FFCF67264B21940016FD3F /* Model */,
 				E7A7D73E2649C8AA0069305C /* Assets.xcassets */,
 				E7A7D7402649C8AA0069305C /* LaunchScreen.storyboard */,
 				E7A7D7432649C8AA0069305C /* Info.plist */,
 				E71CD3122649E11A0027F5C3 /* GoogleService-Info.plist */,
+				E7FFCF53264ACDFD0016FD3F /* Controllers */,
+				E7FFCF69264B21D10016FD3F /* AlertStoryboard.storyboard */,
+				E7FFCF6C264B22200016FD3F /* AlertViewController.swift */,
+			);
+			path = Desafio_iOS_Mobills;
+			sourceTree = "<group>";
+		};
+		E7FFCF53264ACDFD0016FD3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7F23D5A2649F92200A942CD /* ExpensesViewController.swift */,
 				E7F23D502649EF7900A942CD /* HomeViewController.swift */,
 				E7F23D532649EF9500A942CD /* LoginViewController.swift */,
 				E7F23D562649EFA200A942CD /* RegisterViewController.swift */,
-				E7F23D5A2649F92200A942CD /* ExpensesViewController.swift */,
 			);
-			path = Desafio_iOS_Mobills;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E7FFCF67264B21940016FD3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7FFCF59264AD5610016FD3F /* Expense.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +196,8 @@
 				E7A7D7422649C8AA0069305C /* LaunchScreen.storyboard in Resources */,
 				E71CD3132649E11A0027F5C3 /* GoogleService-Info.plist in Resources */,
 				E7A7D73F2649C8AA0069305C /* Assets.xcassets in Resources */,
+				E7FFCF60264ADB2A0016FD3F /* ExpensesTableViewCell.xib in Resources */,
+				E7FFCF6A264B21D10016FD3F /* AlertStoryboard.storyboard in Resources */,
 				E7A7D73D2649C8A50069305C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,9 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FFCF5A264AD5610016FD3F /* Expense.swift in Sources */,
 				E7A7D7362649C8A50069305C /* AppDelegate.swift in Sources */,
 				E7A7D7382649C8A50069305C /* SceneDelegate.swift in Sources */,
 				E7F23D572649EFA200A942CD /* RegisterViewController.swift in Sources */,
+				E7FFCF6D264B22200016FD3F /* AlertViewController.swift in Sources */,
+				E7FFCF5F264ADB2A0016FD3F /* ExpensesTableViewCell.swift in Sources */,
 				E7F23D542649EF9500A942CD /* LoginViewController.swift in Sources */,
 				E7F23D512649EF7900A942CD /* HomeViewController.swift in Sources */,
 				E7F23D5B2649F92200A942CD /* ExpensesViewController.swift in Sources */,
