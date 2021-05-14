@@ -8,8 +8,8 @@
 import Foundation
 
 struct Expense {
-    let value: Double
-    let description: String
-    let date: Date
-    let paid: Bool
+    var value: Double
+    var description: String
+    var date: Date
+    var paid: Bool
 }

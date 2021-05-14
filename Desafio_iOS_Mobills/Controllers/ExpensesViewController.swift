@@ -18,6 +18,11 @@ class ExpensesViewController: UIViewController {
         Expense(value: 19.0, description: "mecanica", date: Date(), paid: false)
     ]
     
+    var receivedExpense: Expense?
+    var expensesTotal = 0.0
+    
+    let alertService = AlertService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,38 +45,23 @@ class ExpensesViewController: UIViewController {
     }
     
     @IBAction func addExpensePressed(_ sender: UIButton) {
-//        let alert = UIAlertController(title: "Expense Details", message: "", preferredStyle: .alert)
-//        let action = UIAlertAction(title: "Add", style: .default) { (action) in
-//
-//        }
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-//
-//        alert.addTextField { (alertTextField) in
-//            alertTextField.placeholder = "Expense Value"
-//        }
-//        alert.addTextField { (alertTextField) in
-//            alertTextField.placeholder = "Expense Description"
-//        }
-//
-////        alert.view.addSubview(createSwitch())
-//        alert.addAction(action)
-//        alert.addAction(cancelAction)
-//
-//        present(alert, animated: true, completion: nil)
+        
+        let alertVC = alertService.alert() {
+            
+        }
+
+        present(alertVC, animated: true)
     }
     
-//    func createSwitch () -> UISwitch{
-//        let switchControl = UISwitch(frame:CGRect(x: 150, y: 150, width: 0, height: 0));
-//        switchControl.isOn = true
-//        switchControl.setOn(true, animated: false)
-//        switchControl.addTarget(self, action: "switchValueDidChange:", for: .valueChanged)
-//        return switchControl
-//    }
+//    func sumExpenses(_ expenses: [Expense]) -> Double {
 //
-//    func switchValueDidChange(sender:UISwitch!){
+//        var total = 0.0
 //
-//        print("Switch Value : \(sender.isOn))")
+//        for total in expenses[inde]
+//
+//        return total
 //    }
+
 }
 
 extension ExpensesViewController: UITableViewDataSource {
